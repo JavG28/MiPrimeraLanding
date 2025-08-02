@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Financiera X - Servicios Contables y Fiscales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f8fafc', // Blanco un poco oscuro
+                        gold: '#d4af37', // Dorado empresarial
+                        'gold-dark': '#b8941f',
+                        'gray-custom': '#1e293b'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-primary text-gray-custom font-sans leading-relaxed">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-gold">Empresa Financiera X</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-custom hover:text-gold transition-colors duration-300">Inicio</a>
+                    <a href="#servicios" class="text-gray-custom hover:text-gold transition-colors duration-300">Servicios</a>
+                    <a href="#nosotros" class="text-gray-custom hover:text-gold transition-colors duration-300">Nosotros</a>
+                    <a href="#testimonios" class="text-gray-custom hover:text-gold transition-colors duration-300">Testimonios</a>
+                    <a href="#contacto" class="text-gray-custom hover:text-gold transition-colors duration-300">Contacto</a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-custom"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-gradient-to-br from-white to-primary py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-custom mb-6 leading-tight">
+                    Soluciones Financieras 
+                    <span class="text-gold">Profesionales</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Expertos en servicios contables y fiscales en República Dominicana. 
+                    Optimizamos tus finanzas con precisión y confiabilidad.
+                </p>
+                <a href="#contacto" 
+                   class="inline-block bg-gold hover:bg-gold-dark text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    Contáctanos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-custom mb-4">
+                    Nuestros Servicios
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Ofrecemos soluciones integrales para todas tus necesidades financieras y contables
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-8 rounded-xl bg-primary hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-custom mb-4">
+                        Elaboración de Estados Financieros
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Estados financieros precisos y detallados que reflejan la verdadera situación de tu empresa.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-8 rounded-xl bg-primary hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-calculator text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-custom mb-4">
+                        Asesoría Contable y Fiscal
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Consultoría especializada para optimizar tus procesos contables y cumplir con las normativas fiscales.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-8 rounded-xl bg-primary hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-sync-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-custom mb-4">
+                        Actualizaciones Contables y Fiscales
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Mantente al día con los últimos cambios en la legislación contable y fiscal dominicana.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center p-8 rounded-xl bg-primary hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-file-invoice-dollar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-custom mb-4">
+                        Declaraciones Impositivas
+                    </h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Preparación y presentación de todas tus declaraciones fiscales de manera oportuna y precisa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-custom mb-6">
+                        Sobre Empresa Financiera X
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Con años de experiencia en el sector financiero dominicano, nos especializamos en brindar 
+                        servicios contables y fiscales de la más alta calidad. Nuestro equipo de profesionales 
+                        certificados está comprometido con la excelencia y la satisfacción de nuestros clientes.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Entendemos que cada empresa es única, por eso ofrecemos soluciones personalizadas que 
+                        se adaptan a las necesidades específicas de tu negocio, garantizando el cumplimiento 
+                        normativo y la optimización de tus recursos financieros.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-gold mr-2"></i>
+                            <span class="text-gray-custom">Profesionales Certificados</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-gold mr-2"></i>
+                            <span class="text-gray-custom">Experiencia Comprobada</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-gold mr-2"></i>
+                            <span class="text-gray-custom">Atención Personalizada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="/mi-proyecto/image/pexels-kunitsky-210990.jpg" 
+                    
+                         alt="Equipo profesional de Empresa Financiera X" 
+                         class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-custom mb-4">
+                    Lo que Dicen Nuestros Clientes
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    La confianza de nuestros clientes es nuestro mayor logro
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-primary p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "Excelente servicio. Su equipo nos ayudó a organizar completamente nuestra contabilidad 
+                        y ahora tenemos total claridad sobre nuestras finanzas. Muy profesionales y confiables."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="/mi-proyecto/image/Maria.png?height=50&width=50" 
+                             alt="María González" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-custom">María González</h4>
+                            <p class="text-sm text-gray-500">Directora, Comercial Santo Domingo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="bg-primary p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "La asesoría fiscal que recibimos fue fundamental para optimizar nuestros impuestos. 
+                        Su conocimiento de la legislación dominicana es impresionante. Los recomiendo totalmente."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="/mi-proyecto/image/Carlos.png?height=50&width=50" 
+                             alt="Carlos Pérez" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-custom">Carlos Pérez</h4>
+                            <p class="text-sm text-gray-500">CEO, Industrias del Caribe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="bg-primary p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 italic leading-relaxed">
+                        "Desde que trabajamos con Empresa Financiera X, nuestras declaraciones siempre están 
+                        a tiempo y sin errores. Su atención al detalle y profesionalismo son excepcionales."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="/mi-proyecto/image/ANA.png?height=50&width=50" 
+                             alt="Ana Martínez" 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-custom">Ana Martínez</h4>
+                            <p class="text-sm text-gray-500">Gerente, Servicios Médicos RD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-custom mb-4">
+                    Contáctanos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Estamos aquí para ayudarte con todas tus necesidades financieras
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Información de Contacto -->
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-custom mb-2">Ubicación</h3>
+                                <p class="text-gray-600">República Dominicana, Distrito Nacional</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-custom mb-2">Teléfono</h3>
+                                <a href="tel:8099060344" class="text-gray-600 hover:text-gold transition-colors">
+                                    809-906-0344
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-custom mb-2">Email</h3>
+                                <a href="mailto:info@empresafinancierax.com" class="text-gray-600 hover:text- transition-colors">
+                                    info@empresafinancierax.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Redes Sociales -->
+                    <div class="mt-12">
+                        <h3 class="text-lg font-semibold text-gray-custom mb-6">Síguenos</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/javier.gomezrodriguez.75/" class="w-12 h-12 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors duration-300">
+                                <i class="fab fa-facebook-f text-white"></i>
+                            </a>
+                            <a href="https://www.instagram.com/jeg027/?hl=es" class="w-12 h-12 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors duration-300">
+                                <i class="fab fa-instagram text-white"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/javieregomezr/" class="w-12 h-12 bg-gold hover:bg-gold-dark rounded-full flex items-center justify-center transition-colors duration-300">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </a>
+                            <a href="https://wa.me/18099060344" class="w-12 h-12 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors duration-300">
+                                <i class="fab fa-whatsapp text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de Contacto -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="nombre" class="block text-sm font-medium text-gray-custom mb-2">
+                                Nombre Completo
+                            </label>
+                            <input type="text" id="nombre" name="nombre" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300"
+                                   placeholder="Tu nombre completo">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-custom mb-2">
+                                Correo Electrónico
+                            </label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300"
+                                   placeholder="tu@email.com">
+                        </div>
+                        
+                        <div>
+                            <label for="telefono" class="block text-sm font-medium text-gray-custom mb-2">
+                                Teléfono
+                            </label>
+                            <input type="tel" id="telefono" name="telefono" 
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300"
+                                   placeholder="809-000-0000">
+                        </div>
+                        
+                        <div>
+                            <label for="mensaje" class="block text-sm font-medium text-gray-custom mb-2">
+                                Mensaje
+                            </label>
+                            <textarea id="mensaje" name="mensaje" rows="4" 
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-300"
+                                      placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-gold hover:bg-gold-dark text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-custom text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-gold mb-4">Empresa Financiera X</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Tu socio confiable en servicios contables y fiscales en República Dominicana.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Estados Financieros</li>
+                        <li>Asesoría Contable</li>
+                        <li>Actualizaciones Fiscales</li>
+                        <li>Declaraciones Impositivas</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Mantente Informado</h4>
+                    <p class="text-gray-300 mb-4">Suscríbete para enterarte de las últimas noticias</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Tu email" 
+                               class="flex-1 px-4 py-2 rounded-l-lg text-gray-custom focus:outline-none">
+                        <button class="bg-gold hover:bg-gold-dark px-6 py-2 rounded-r-lg transition-colors duration-300">
+                            Suscribirse
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2024 Empresa Financiera X. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="fixed bottom-8 right-8 bg-gold hover:bg-gold-dark text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
